@@ -1,0 +1,17 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+
+body{
+	background:green;
+	color: darkgreen;
+}
+
+header{
+	background: green;
+    
+        img{
+            display:block;
+	        width: 200px;
+	        }
+}

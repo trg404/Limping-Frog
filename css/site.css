@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background: green;
+  color: darkgreen; }
+
+header {
+  background: green; }
+  header img {
+    display: block;
+    width: 200px; }
+
+/*# sourceMappingURL=site.css.map */
