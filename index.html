@@ -6,8 +6,7 @@
 <!-- title of company and location for optimized SEO -->
 <title> Limping Frog Video Production | Olrando, FL</title>
 
-<!-- reset css so browsers don't add in unwatned tags-->
-<link href="https://necolas.github.io/normalize.css/3.0.2/normalize.css" rel='stylesheet' />
+
 
 <!--  style sheets for lightbox in box 3  -->
 <link href="css/lightbox/lightbox.css" rel="stylesheet"/>
@@ -17,68 +16,99 @@
 <link href="css/site.css" rel="stylesheet"/>
 
 
+
 </head>
 
 
 <body>
 <header>
-    <nav>
-        <img src="img/logo.png" alt="limping frog logo">
+    
 
+        <img src="img/logo.png" alt="limping frog logo">
+<nav>
         <ul>
-            <li><a> Home</a></li>
-            <li><a> Video</a></li>
-            <li><a> Stills</a></li>
-            <li><a> Contact Us</a></li>
+            <li><a href="#box1"> Home</a></li>
+            <li><a href="#box2"> Video</a></li>
+            <li><a href="#box3"> Stills</a></li>
+            <li><a href="#box4"> Contact Us</a></li>
             </ul>
 
     </nav>
 
 </header>
-<content>
 
-<div class="box1">
+
+<div id="box1">
 
     <article>
         <h1> Limping Frog Productions</h1>
-    
+    <div class="col1">
         <p>Our 'pad' of seasoned digital media experts will collaborate closely with you to identify and capture the key components for your production. We pride ourselves on our consultative approach, and always insist that every client earns a final product that exceeds his or her expectations. We strive to ensure your experience remains a positive one, regardless if it requires documenting a wedding, recording a conference, launching a new product or showcasing a special service. To learn more about our film or video services, contact us at john.carkeet@limpingfrog.com or call (407) 374-3764.</p>
     </article>
-
+</div>
 </div>
 
-<div class="box2">
+<div id="box2">
+<div class="movies">
 <!-- Video carousel of major releases-->
 
-    <div class="oneMoreFriday">
+    <div class="oneMoreFriday slide">
+    <h2> One More Friday</h2>
+        <iframe src="https://player.vimeo.com/video/12864751" width="600" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/12864751">One More Friday Excerpt</a> from <a href="https://vimeo.com/limpingfrog">LimpingFrog Productions</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+        <div class='paypal'>
+        <form accept-charset="UNKNOWN" action="https://www.paypal.com/cgi-bin/webscr" enctype="application/x-www-form-urlencoded" method="post"><input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="Z3E5TDQ4WA634"> <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image"> <img src="https://www.paypal.com/en_US/i/scr/pixel.gif" border="0" alt="" width="1" height="1"></form>
+        </div>
     </div>
 
 
-    <div class="beachPride">
+    <div class="beachPride slide">
+    <h2>Beach Pride</h2>
+        <iframe src="https://player.vimeo.com/video/19642144" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/19642144">&quot;Beach Pride&quot; Trailer</a> from <a href="https://vimeo.com/limpingfrog">LimpingFrog Productions</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="L9WJFFM59A524"> <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image"> <img src="https://www.paypal.com/en_US/i/scr/pixel.gif" border="0" alt="" width="1" height="1"></form>
 
     </div>
     
 
-    <div class="afair">
-
+    <div class="afair slide">
+    <h2> Afair</h2>
+        <iframe src="https://player.vimeo.com/video/3234346" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/3234346">Afair</a> from <a href="https://vimeo.com/user1280670">Ryan Krause</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
     </div>
 
 </div>
+</div>
 
-<div class="box3">
+<div id="box3">
 <!-- lightbox stills of past events, weddings, coproprate events etc.-->
-
+<h2> Photographic Stills </h2>
 
 </div>
 
-</content>
+<div id="box4">
+<!-- Contact informaiton -->
+<h2> Contact Us</h2>
+</div>
+
 
 <!-- javascript for Jquery -->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
 <!-- JavaScripts for carousel--> 
-<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/slick/slick/slick.min.js"></script>
+
+
 <!-- javascript for lightbox-->
 <script src="js/lightbox.min.js"></script>
+
+
+
+<!-- Jquery implementing the carousel-->
+<script src="js/carousel.js"></script>
+
+
+
 </body>

@@ -1,17 +1,87 @@
-@import 'bourbon/bourbon';
-@import 'neat/neat';
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "slick/slick";
+@import "slick/slick-theme";
+
+$green: #66ff66;
+$tall: 1000px;
+
+
+@mixin roundedCorners
+
+{
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+ }
 
 
 body{
-	background:green;
+	background:$green;
 	color: darkgreen;
 }
 
 header{
-	background: green;
+	    background: tint($green, 20%);
     
-        img{
-            display:block;
-	        width: 200px;
+            img{
+                display:block;
+	            width: 200px;
 	        }
+}
+
+#box1{
+	background: shade($green, 20%);
+	height:$tall;
+	.col1{
+		@include span-columns(5 of 12);
+		padding-left: 3em;
+	}
+}
+
+#box2{
+	height: $tall;
+	background: shade($green, 40%);
+}
+
+#box3{
+	height: $tall;
+	background: shade($green, 60%);
+}
+#box4{
+	height:$tall;
+	background: shade($green, 80%);
+}
+.paypal{
+	padding: 40px 0px 0px 10px;
+}
+
+
+.movies{
+margin: auto;
+width: 60%;
+
+}
+
+.slide{
+	.slick-prev{
+		border: 1px soild black;
+	}
+	margin-top: 200px;
+	@include roundedCorners;
+	border: 5px solid black;
+	background: shade($green, 60%);
+	iframe, p,{
+		margin-left: 150px;
+	}
+	h2, form{
+		margin-left: 40%;
+	}
+}
+
+nav li{
+	@include roundedCorners;
+	border: 5px solid black;
+	margin-left: 5em;
+	display:inline;
 }
