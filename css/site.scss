@@ -3,17 +3,24 @@
 @import "slick/slick";
 @import "slick/slick-theme";
 
+
+
 $green: #66ff66;
 $tall: 1000px;
 
 
-@mixin roundedCorners
+@mixin test{
+ border: 3px solid black;
+}
 
-{
+@mixin roundedCorners{
 -webkit-border-radius: 50px;
 -moz-border-radius: 50px;
 border-radius: 50px;
  }
+
+/* main css */
+
 
 
 body{
@@ -26,32 +33,110 @@ header{
     
             img{
                 display:block;
-	            width: 200px;
+	            width: 300px;
 	        }
 }
+
 
 #box1{
 	background: shade($green, 20%);
 	height:$tall;
+	
 	.col1{
-		@include span-columns(5 of 12);
+		width: 40%;
+		float:left;
 		padding-left: 3em;
+		p{
+		margin-top: 100px;
+		}
+	}
+
+	.col2{
+
+	img{
+	
+	width: 300px;
+	}
+
+	
+
 	}
 }
 
+
+
+
+
+
+/* Movies */
 #box2{
 	height: $tall;
 	background: shade($green, 40%);
+	
+}
+.slide{
+color:tint($green, 20%);
+	margin-top: 200px;
+	@include roundedCorners;
+	border: 5px solid black;
+	background: shade($green, 60%);
+	iframe, p,{
+		margin-left:100px;
+		margin-right: 100px;
+	}
+	h2, form{
+	text-align:center;	
+	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* stills lightbox 3 columns*/
 #box3{
+	color:lightgreen;
 	height: $tall;
 	background: shade($green, 60%);
+
 }
+
+.b3left, .b3middle{
+	float:left;
+}
+.b3right{
+	height: 700px;
+}
+
+
+
+.stills, .scenes , .wedding, .corporate{
+text-align:center;
+border-bottom: 3px solid black;
+    margin: 50px 20px;
+	img{width: 300px;}
+}
+
+
+
+
+
+ /*contact us*/
+
 #box4{
 	height:$tall;
 	background: shade($green, 80%);
 }
+
+
+
 .paypal{
 	padding: 40px 0px 0px 10px;
 }
@@ -63,21 +148,7 @@ width: 60%;
 
 }
 
-.slide{
-	.slick-prev{
-		border: 1px soild black;
-	}
-	margin-top: 200px;
-	@include roundedCorners;
-	border: 5px solid black;
-	background: shade($green, 60%);
-	iframe, p,{
-		margin-left: 150px;
-	}
-	h2, form{
-		margin-left: 40%;
-	}
-}
+
 
 nav li{
 	@include roundedCorners;
@@ -85,3 +156,4 @@ nav li{
 	margin-left: 5em;
 	display:inline;
 }
+
