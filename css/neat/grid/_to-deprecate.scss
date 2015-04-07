@@ -10,7 +10,13 @@
       @content;
       $grid-columns: $default-grid-columns;
     }
+<<<<<<< HEAD
+  }
+
+  @else if length($query) == 2 {
+=======
   } @else if length($query) == 2 {
+>>>>>>> origin/master
     @media screen and (nth($query, 1): nth($query, 2)) {
       $default-grid-columns: $grid-columns;
       $grid-columns: $total-columns;
@@ -18,6 +24,7 @@
       $grid-columns: $default-grid-columns;
     }
   } @else if length($query) == 3 {
+>>>>>>> origin/master
     @media screen and (nth($query, 1): nth($query, 2)) {
       $default-grid-columns: $grid-columns;
       $grid-columns: nth($query, 3);
@@ -25,6 +32,7 @@
       $grid-columns: $default-grid-columns;
     }
   } @else if length($query) == 4 {
+>>>>>>> origin/master
     @media screen and (nth($query, 1): nth($query, 2)) and (nth($query, 3): nth($query, 4)) {
       $default-grid-columns: $grid-columns;
       $grid-columns: $total-columns;
@@ -32,6 +40,7 @@
       $grid-columns: $default-grid-columns;
     }
   } @else if length($query) == 5 {
+>>>>>>> origin/master
     @media screen and (nth($query, 1): nth($query, 2)) and (nth($query, 3): nth($query, 4)) {
       $default-grid-columns: $grid-columns;
       $grid-columns: nth($query, 5);
@@ -40,6 +49,7 @@
     }
   } @else {
     @include -neat-warn("Wrong number of arguments for breakpoint(). Read the documentation for more details.");
+>>>>>>> origin/master
   }
 }
 

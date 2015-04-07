@@ -204,7 +204,8 @@
 /* main css */
 body {
   background: #66ff66;
-  color: darkgreen; }
+  color: darkgreen;
+  height: 5000px; }
 
 header {
   background: #84ff84; }
