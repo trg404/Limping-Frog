@@ -77,16 +77,15 @@
 
 /* Slider */
 .slick-loading .slick-list {
-  background: white image-url("ajax-loader.gif") center center no-repeat; }
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: font-url("slick.eot");
-  src: font-url("slick.eot?#iefix") format("embedded-opentype"), font-url("slick.woff") format("woff"), font-url("slick.ttf") format("truetype"), font-url("slick.svg#slick") format("svg");
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -202,6 +201,7 @@
       color: black;
       opacity: 0.75; }
 
+/* main css */
 body {
   background: #66ff66;
   color: darkgreen;
@@ -211,28 +211,59 @@ header {
   background: #84ff84; }
   header img {
     display: block;
-    width: 200px; }
+    width: 300px; }
 
 #box1 {
   background: #51cc51;
   height: 1000px; }
   #box1 .col1 {
+    width: 40%;
     float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
     padding-left: 3em; }
-    #box1 .col1:last-child {
-      margin-right: 0; }
+    #box1 .col1 p {
+      margin-top: 100px; }
+  #box1 .col2 img {
+    width: 300px; }
 
+/* Movies */
 #box2 {
   height: 1000px;
   background: #3d993d; }
 
+.slide {
+  color: #84ff84;
+  margin-top: 200px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 5px solid black;
+  background: #286628; }
+  .slide iframe, .slide p {
+    margin-left: 100px;
+    margin-right: 100px; }
+  .slide h2, .slide form {
+    text-align: center; }
+
+/* stills lightbox 3 columns*/
 #box3 {
+  color: lightgreen;
   height: 1000px;
   background: #286628; }
 
+.b3left, .b3middle {
+  float: left; }
+
+.b3right {
+  height: 700px; }
+
+.stills, .scenes, .wedding, .corporate {
+  text-align: center;
+  border-bottom: 3px solid black;
+  margin: 50px 20px; }
+  .stills img, .scenes img, .wedding img, .corporate img {
+    width: 300px; }
+
+/*contact us*/
 #box4 {
   height: 1000px;
   background: #143214; }
@@ -244,20 +275,6 @@ header {
   margin: auto;
   width: 60%; }
 
-.slide {
-  margin-top: 200px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  border: 5px solid black;
-  background: #286628; }
-  .slide .slick-prev {
-    border: 1px soild black; }
-  .slide iframe, .slide p {
-    margin-left: 150px; }
-  .slide h2, .slide form {
-    margin-left: 40%; }
-
 nav li {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -265,3 +282,5 @@ nav li {
   border: 5px solid black;
   margin-left: 5em;
   display: inline; }
+
+/*# sourceMappingURL=site.css.map */
