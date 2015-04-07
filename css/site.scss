@@ -28,22 +28,54 @@ body{
 	color: darkgreen;
 }
 
+
+
 header{
 	    background: tint($green, 20%);
+	   
     
             img{
-                display:block;
+           
+                display:inline-block;
 	            width: 300px;
+
 	        }
 }
 
+nav li{
+        a{color: tint($green, 80%);
+	    
+	    }
+
+	@include roundedCorners;
+	border: 5px solid shade($green, 80%);
+	margin-left: 5em;
+	display:inline;
+	padding: 10px;
+	background-color: shade($green, 80%);
+
+
+
+}
+
+nav{
+	display:inline-block;
+
+}
+
+
+
+
 
 #box1{
+h1{
+color: tint($green, 20%);
+}
 	background: shade($green, 20%);
 	height:$tall;
 	
 	.col1{
-		width: 40%;
+		width: 70%;
 		float:left;
 		padding-left: 3em;
 		p{
@@ -54,7 +86,6 @@ header{
 	.col2{
 
 	img{
-	
 	width: 300px;
 	}
 
@@ -70,13 +101,16 @@ header{
 
 /* Movies */
 #box2{
+h1{
+	color: tint($green, 40%);
+}
 	height: $tall;
 	background: shade($green, 40%);
 	
 }
 .slide{
 color:tint($green, 20%);
-	margin-top: 200px;
+	margin-top: 50px;
 	@include roundedCorners;
 	border: 5px solid black;
 	background: shade($green, 60%);
@@ -102,6 +136,9 @@ color:tint($green, 20%);
 
 /* stills lightbox 3 columns*/
 #box3{
+h1{
+	color: tint($green, 60%);
+}
 	color:lightgreen;
 	height: $tall;
 	background: shade($green, 60%);
@@ -133,6 +170,7 @@ border-bottom: 3px solid black;
 #box4{
 	height:$tall;
 	background: shade($green, 80%);
+	color: tint($green, 80%);
 }
 
 
@@ -150,10 +188,5 @@ width: 60%;
 
 
 
-nav li{
-	@include roundedCorners;
-	border: 5px solid black;
-	margin-left: 5em;
-	display:inline;
-}
+
 
