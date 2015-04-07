@@ -19,6 +19,7 @@ border-radius: 50px;
 body{
 	background:$green;
 	color: darkgreen;
+	height: 5000px;
 }
 
 header{
@@ -31,11 +32,13 @@ header{
 }
 
 #box1{
+	
 	background: shade($green, 20%);
 	height:$tall;
 	.col1{
 		@include span-columns(5 of 12);
 		padding-left: 3em;
+
 	}
 }
 
