@@ -1,67 +1,65 @@
 @import "bourbon/bourbon";
 @import "slick/slick";
 @import "slick/slick-theme";
+@import "color";
 
 
-
-$green: #66ff66;
 $tall: 1000px;
 
-
-@mixin test{
- border: 3px solid black;
+*{
+	@include box-sizing(border-box);
 }
 
-@mixin roundedCorners{
--webkit-border-radius: 50px;
--moz-border-radius: 50px;
-border-radius: 50px;
- }
-
 /* main css */
-
 
 
 body{
 	background:$green;
 	color: darkgreen;
-	height: 5000px;
+	height: 3000px;
 }
 
 
 
-header{
-	    background: tint($green, 20%);
-	   
+
+
+
+/*header / nav */
+
+.top{           
+background: $greenT20;
+
+
+	li{
+	        a{
+	        color:$greenT80;
+		    }
+
+		border-radius: 10px;
+		
+		display:inline-block;
+		padding:10px;
+		background-color: $greenS80;
+		width: 120px;
+		margin-top: -10px;
+		text-align:center;
+	}
+
     
-            img{
-           
-                display:inline-block;
-	            width: 300px;
-
-	        }
+    img{
+        display:inline-block;
+	    width: 200px;
+	}
+	li:nth-child(n+2){
+	margin-left:5em;
+}
 }
 
-nav li{
-        a{color: tint($green, 80%);
-	    
-	    }
-
-	@include roundedCorners;
-	border: 5px solid shade($green, 80%);
-	margin-left: 5em;
-	display:inline;
-	padding: 10px;
-	background-color: shade($green, 80%);
 
 
 
-}
 
-nav{
-	display:inline-block;
 
-}
 
 
 
@@ -118,7 +116,7 @@ h1{
 .slide{
 color:tint($green, 20%);
 	margin-top: 50px;
-	@include roundedCorners;
+	
 	border: 5px solid black;
 	background: shade($green, 60%);
 	iframe, p,{
@@ -130,8 +128,16 @@ color:tint($green, 20%);
 	}
 }
 
+.paypal{
+	padding: 40px 0px 0px 10px;
+}
 
 
+.movies{
+    margin: auto;
+    width: 60%;
+
+}
 
 
 
@@ -162,8 +168,8 @@ h1{
 
 
 .stills, .scenes , .wedding, .corporate{
-text-align:center;
-border-bottom: 3px solid black;
+    text-align:center;
+    border-bottom: 3px solid black;
     margin: 50px 20px;
 	img{width: 300px;}
 }
@@ -171,27 +177,29 @@ border-bottom: 3px solid black;
 
 
 
-
  /*contact us*/
 
 #box4{
+
 	height:$tall;
 	background: shade($green, 80%);
 	color: tint($green, 80%);
+	
+   p{
+    width:70%;
+	}
+}
+
+.cta{
+	background: tint($green, 80%);
+	color: shade($green, 80%);
+	width: 150px;
+  
+
 }
 
 
 
-.paypal{
-	padding: 40px 0px 0px 10px;
-}
-
-
-.movies{
-margin: auto;
-width: 60%;
-
-}
 
 
 

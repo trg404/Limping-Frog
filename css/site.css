@@ -72,15 +72,7 @@
 
 /* Slider */
 .slick-loading .slick-list {
-  background: white image-url("ajax-loader.gif") center center no-repeat; }
-
-/* Icons */
-@font-face {
-  font-family: "slick";
-  src: font-url("slick.eot");
-  src: font-url("slick.eot?#iefix") format("embedded-opentype"), font-url("slick.woff") format("woff"), font-url("slick.ttf") format("truetype"), font-url("slick.svg#slick") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
 
 /* Arrows */
 .slick-prev,
@@ -142,87 +134,38 @@
     [dir="rtl"] .slick-next:before {
       content: "←"; }
 
-/* Dots */
-.slick-slider {
-  margin-bottom: 30px; }
-
-.slick-dots {
-  position: absolute;
-  bottom: -45px;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0;
-  width: 100%; }
-  .slick-dots li {
-    position: relative;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer; }
-    .slick-dots li button {
-      border: 0;
-      background: transparent;
-      display: block;
-      height: 20px;
-      width: 20px;
-      outline: none;
-      line-height: 0px;
-      font-size: 0px;
-      color: transparent;
-      padding: 5px;
-      cursor: pointer; }
-      .slick-dots li button:hover, .slick-dots li button:focus {
-        outline: none; }
-        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
-          opacity: 1; }
-      .slick-dots li button:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "•";
-        width: 20px;
-        height: 20px;
-        font-family: "slick";
-        font-size: 6px;
-        line-height: 20px;
-        text-align: center;
-        color: black;
-        opacity: 0.25;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; }
-    .slick-dots li.slick-active button:before {
-      color: black;
-      opacity: 0.75; }
+/* Color Pallet */
+/* Green Tints */
+/*Green Shades*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /* main css */
 body {
   background: #66ff66;
   color: darkgreen;
-  height: 5000px; }
+  height: 3000px; }
 
-header {
+/*header / nav */
+.top {
   background: #84ff84; }
-  header img {
+  .top li {
+    border-radius: 10px;
     display: inline-block;
-    width: 300px; }
-
-nav li {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  border: 5px solid #143214;
-  margin-left: 5em;
-  display: inline;
-  padding: 10px;
-  background-color: #143214; }
-  nav li a {
-    color: #e0ffe0; }
-
-nav {
-  display: inline-block; }
+    padding: 10px;
+    background-color: #143214;
+    width: 120px;
+    margin-top: -10px;
+    text-align: center; }
+    .top li a {
+      color: #e0ffe0; }
+  .top img {
+    display: inline-block;
+    width: 200px; }
+  .top li:nth-child(n+2) {
+    margin-left: 5em; }
 
 #box1 {
   background: #51cc51;
@@ -248,9 +191,6 @@ nav {
 .slide {
   color: #84ff84;
   margin-top: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
   border: 5px solid black;
   background: #286628; }
   .slide iframe, .slide p {
@@ -258,6 +198,13 @@ nav {
     margin-right: 100px; }
   .slide h2, .slide form {
     text-align: center; }
+
+.paypal {
+  padding: 40px 0px 0px 10px; }
+
+.movies {
+  margin: auto;
+  width: 60%; }
 
 /* stills lightbox 3 columns*/
 #box3 {
@@ -285,10 +232,12 @@ nav {
   height: 1000px;
   background: #143214;
   color: #e0ffe0; }
+  #box4 p {
+    width: 70%; }
 
-.paypal {
-  padding: 40px 0px 0px 10px; }
+.cta {
+  background: #e0ffe0;
+  color: #143214;
+  width: 150px; }
 
-.movies {
-  margin: auto;
-  width: 60%; }
+/*# sourceMappingURL=site.css.map */

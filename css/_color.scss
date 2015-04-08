@@ -1,0 +1,16 @@
+/* Color Pallet */
+
+$green: #66ff66;
+
+/* Green Tints */
+$greenT20: tint($green, 20%);
+$greenT40: tint($green, 40%);
+$greenT60: tint($green, 60%);
+$greenT80: tint($green, 80%);
+
+/*Green Shades*/
+$greenS20: shade($green, 20%);
+$greenS40: shade($green, 40%);
+$greenS60: shade($green, 60%);
+$greenS80: shade($green, 80%);
+
