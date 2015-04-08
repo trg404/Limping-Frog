@@ -22,9 +22,24 @@ body{
 
 
 
+.header{
+
+	    background:
+	    url('img/topSwamp.svg'),tint($green, 20%)
+	    ;
+    
+            img{
+           
+                display:inline-block;
+	            width: 300px;
+
+
+
 
 
 /*header / nav */
+
+
 
 .top{           
 background: $greenT20;
